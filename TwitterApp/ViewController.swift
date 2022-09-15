@@ -11,8 +11,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         for i in 0 ..< tweet.tweetData.count {
-            tweetData.append(tweetData[i])
+            tweetData.append(tweet.tweetData[i])
         }
         
         twitterView.delegate = self
@@ -26,7 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return tweet.tweetData.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -39,6 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.userId.text = String(tweetData[indexPath.row].user.userDecidedId)
         cell.userName.text = String(tweetData[indexPath.row].user.name)
         cell.retweetButton.titleLabel?.text = String(tweetData[indexPath.row].retweetCount)
+        cell.tweetCreatedDate?.text = tweetData[indexPath.row].createdAt as? String
         cell.favoriteButton.titleLabel?.text = String(tweetData[indexPath.row].favoriteCount)
         return cell
     }
