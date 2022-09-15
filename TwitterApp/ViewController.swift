@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in tweet.tweetData.count {
+        for i in 0 ..< tweet.tweetData.count {
             tweetData.append(tweetData[i])
         }
         
