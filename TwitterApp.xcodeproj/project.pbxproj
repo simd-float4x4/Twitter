@@ -17,6 +17,10 @@
 		70A9592328D33A3500540FDD /* TwitterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9592228D33A3500540FDD /* TwitterAppTests.swift */; };
 		70A9592D28D33A3500540FDD /* TwitterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9592C28D33A3500540FDD /* TwitterAppUITests.swift */; };
 		70A9592F28D33A3500540FDD /* TwitterAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9592E28D33A3500540FDD /* TwitterAppUITestsLaunchTests.swift */; };
+		70A9593D28D33AA300540FDD /* TwitterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9593B28D33AA300540FDD /* TwitterViewCell.swift */; };
+		70A9593E28D33AA300540FDD /* TwitterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A9593C28D33AA300540FDD /* TwitterViewCell.xib */; };
+		70A9594028D33ACB00540FDD /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9593F28D33ACB00540FDD /* Tweet.swift */; };
+		70A9594228D33B3100540FDD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9594128D33B3100540FDD /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		70A9592828D33A3500540FDD /* TwitterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A9592C28D33A3500540FDD /* TwitterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAppUITests.swift; sourceTree = "<group>"; };
 		70A9592E28D33A3500540FDD /* TwitterAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70A9593B28D33AA300540FDD /* TwitterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewCell.swift; sourceTree = "<group>"; };
+		70A9593C28D33AA300540FDD /* TwitterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwitterViewCell.xib; sourceTree = "<group>"; };
+		70A9593F28D33ACB00540FDD /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		70A9594128D33B3100540FDD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +109,12 @@
 		70A9590728D33A3300540FDD /* TwitterApp */ = {
 			isa = PBXGroup;
 			children = (
+				70A9594328D33B4500540FDD /* Model */,
 				70A9590828D33A3300540FDD /* AppDelegate.swift */,
 				70A9590A28D33A3300540FDD /* SceneDelegate.swift */,
 				70A9590C28D33A3300540FDD /* ViewController.swift */,
+				70A9593B28D33AA300540FDD /* TwitterViewCell.swift */,
+				70A9593C28D33AA300540FDD /* TwitterViewCell.xib */,
 				70A9590E28D33A3300540FDD /* Main.storyboard */,
 				70A9591428D33A3400540FDD /* Assets.xcassets */,
 				70A9591628D33A3400540FDD /* LaunchScreen.storyboard */,
@@ -128,6 +139,15 @@
 				70A9592E28D33A3500540FDD /* TwitterAppUITestsLaunchTests.swift */,
 			);
 			path = TwitterAppUITests;
+			sourceTree = "<group>";
+		};
+		70A9594328D33B4500540FDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70A9593F28D33ACB00540FDD /* Tweet.swift */,
+				70A9594128D33B3100540FDD /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +256,7 @@
 			files = (
 				70A9591828D33A3400540FDD /* LaunchScreen.storyboard in Resources */,
 				70A9591528D33A3400540FDD /* Assets.xcassets in Resources */,
+				70A9593E28D33AA300540FDD /* TwitterViewCell.xib in Resources */,
 				70A9591028D33A3300540FDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A9593D28D33AA300540FDD /* TwitterViewCell.swift in Sources */,
 				70A9590D28D33A3300540FDD /* ViewController.swift in Sources */,
 				70A9590928D33A3300540FDD /* AppDelegate.swift in Sources */,
+				70A9594028D33ACB00540FDD /* Tweet.swift in Sources */,
 				70A9590B28D33A3300540FDD /* SceneDelegate.swift in Sources */,
 				70A9591328D33A3300540FDD /* TwitterApp.xcdatamodeld in Sources */,
+				70A9594228D33B3100540FDD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +468,13 @@
 				DEVELOPMENT_TEAM = 27UFW2M9H8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TwitterApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,11 +498,13 @@
 				DEVELOPMENT_TEAM = 27UFW2M9H8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TwitterApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
