@@ -21,6 +21,8 @@
 		70A9593E28D33AA300540FDD /* TwitterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A9593C28D33AA300540FDD /* TwitterViewCell.xib */; };
 		70A9594028D33ACB00540FDD /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9593F28D33ACB00540FDD /* Tweet.swift */; };
 		70A9594228D33B3100540FDD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9594128D33B3100540FDD /* User.swift */; };
+		70A9594528D3473B00540FDD /* GenerateSampleUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9594428D3473B00540FDD /* GenerateSampleUserData.swift */; };
+		70A9594728D34BF800540FDD /* GenerateSampleTweetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9594628D34BF800540FDD /* GenerateSampleTweetData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		70A9593C28D33AA300540FDD /* TwitterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwitterViewCell.xib; sourceTree = "<group>"; };
 		70A9593F28D33ACB00540FDD /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		70A9594128D33B3100540FDD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		70A9594428D3473B00540FDD /* GenerateSampleUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleUserData.swift; sourceTree = "<group>"; };
+		70A9594628D34BF800540FDD /* GenerateSampleTweetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleTweetData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				70A9591628D33A3400540FDD /* LaunchScreen.storyboard */,
 				70A9591928D33A3400540FDD /* Info.plist */,
 				70A9591128D33A3300540FDD /* TwitterApp.xcdatamodeld */,
+				70A9594428D3473B00540FDD /* GenerateSampleUserData.swift */,
+				70A9594628D34BF800540FDD /* GenerateSampleTweetData.swift */,
 			);
 			path = TwitterApp;
 			sourceTree = "<group>";
@@ -284,8 +290,10 @@
 			files = (
 				70A9593D28D33AA300540FDD /* TwitterViewCell.swift in Sources */,
 				70A9590D28D33A3300540FDD /* ViewController.swift in Sources */,
+				70A9594528D3473B00540FDD /* GenerateSampleUserData.swift in Sources */,
 				70A9590928D33A3300540FDD /* AppDelegate.swift in Sources */,
 				70A9594028D33ACB00540FDD /* Tweet.swift in Sources */,
+				70A9594728D34BF800540FDD /* GenerateSampleTweetData.swift in Sources */,
 				70A9590B28D33A3300540FDD /* SceneDelegate.swift in Sources */,
 				70A9591328D33A3300540FDD /* TwitterApp.xcdatamodeld in Sources */,
 				70A9594228D33B3100540FDD /* User.swift in Sources */,

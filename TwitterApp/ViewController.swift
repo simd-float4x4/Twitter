@@ -5,10 +5,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var twitterView: UITableView!
     
-    var tweetList: [Tweet]!
+    var tweet = generateSampleTweetData()
+    var tweetData = [Tweet]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for i in tweet.tweetData.count {
+            tweetData.append(tweetData[i])
+        }
+        
         twitterView.delegate = self
         twitterView.dataSource = self
         // Do any additional setup after loading the view.
@@ -29,6 +35,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = twitterView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TwitterViewCell
+        cell.tweetContent.text = tweetData[indexPath.row].content
+        cell.userId.text = String(tweetData[indexPath.row].user.userDecidedId)
+        cell.userName.text = String(tweetData[indexPath.row].user.name)
+        cell.retweetButton.titleLabel?.text = String(tweetData[indexPath.row].retweetCount)
+        cell.favoriteButton.titleLabel?.text = String(tweetData[indexPath.row].favoriteCount)
         return cell
     }
 

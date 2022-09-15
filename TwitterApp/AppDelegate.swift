@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TwitterApp
-//
-//  Created by Shumpei Horiuchi on 2022/09/15.
-//
-
 import UIKit
 import CoreData
 

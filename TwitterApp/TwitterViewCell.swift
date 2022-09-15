@@ -4,6 +4,14 @@ class TwitterViewCell: UITableViewCell {
 
     @IBOutlet var tweetContent: UITextView!
     
+    @IBOutlet var userName: UILabel!
+    @IBOutlet var userId: UILabel!
+    
+    @IBOutlet var tweetCreatedDate: UILabel!
+    
+    @IBOutlet var retweetButton: UIButton!
+    @IBOutlet var favoriteButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         tweetContent.isScrollEnabled = false

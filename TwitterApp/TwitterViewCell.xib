@@ -150,7 +150,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="favoriteButton" destination="3et-z5-To2" id="H2e-Nx-Zjt"/>
+                <outlet property="retweetButton" destination="yLN-0A-NXR" id="m94-XL-F1j"/>
                 <outlet property="tweetContent" destination="pav-Z3-Tan" id="U08-q4-GCo"/>
+                <outlet property="tweetCreatedDate" destination="SZF-lj-eje" id="eNo-1q-9CH"/>
+                <outlet property="userId" destination="iaJ-LT-j5t" id="ZBR-x0-c2f"/>
+                <outlet property="userName" destination="1Vv-8p-zRC" id="JRP-Vx-qRn"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="161.04910714285714"/>
         </tableViewCell>
